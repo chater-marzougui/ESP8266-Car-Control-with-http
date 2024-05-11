@@ -52,7 +52,7 @@ Contributions are welcome! Whether you're interested in adding new features, opt
 
 ## License:
 
-This project is licensed under the MIT License - see the [LICENSE](https://github.com/chater-marzougui/ESP8266-Car-Control-with-http/tree/main#MIT-1-ov-file) file for details.
+This project is licensed under the MIT License - see the [Licence](https://github.com/chater-marzougui/ESP8266-Car-Control-with-http/tree/main#MIT-1-ov-file) file for details.
 
 ## Credits:
 
