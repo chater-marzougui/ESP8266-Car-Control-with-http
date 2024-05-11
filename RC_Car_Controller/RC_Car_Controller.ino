@@ -57,8 +57,8 @@ void setup() {
   pinMode(led2,OUTPUT);
 
 
-////////////////////////////////////
-MailClient.networkReconnect(true);
+  ////////////////////////////////////
+  MailClient.networkReconnect(true);
   smtp.debug(1);
   Session_Config config;
   config.server.host_name = SMTP_HOST;
@@ -86,11 +86,11 @@ MailClient.networkReconnect(true);
   message.priority = esp_mail_smtp_priority::esp_mail_smtp_priority_high;
   message.addHeader(F("Message-ID: <abcde.fghij@gmail.com>"));
 
- smtp.connect(&config);
- smtp.isLoggedIn();
- smtp.isAuthenticated();
- MailClient.sendMail(&smtp, &message);
- /////////////////////////////////////////////////
+  smtp.connect(&config);
+  smtp.isLoggedIn();
+  smtp.isAuthenticated();
+  MailClient.sendMail(&smtp, &message);
+  /////////////////////////////////////////////////
 
   for (int i = 0 ; i < 16;i++ ){
     digitalWrite(led1,HIGH);
@@ -100,9 +100,6 @@ MailClient.networkReconnect(true);
     digitalWrite(led2,HIGH);
     delay(50);
   }
-
-
-
 
   // Define web server routes
   server.on("/MOVE", HTTP_GET, move);
@@ -174,7 +171,6 @@ void move(){
   xaxis = server.arg("xaxis").toInt();
   yaxis = server.arg("yaxis").toInt();
 }
-
 
 void stop(){
   Serial.println("STOP");
@@ -259,7 +255,6 @@ void leftback(){
   analogWrite(forR, 0);
   analogWrite(backR, speed);
 }
-
 
 void led(){
   ledbool = (server.arg("turnon").toInt() == 1);
