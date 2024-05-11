@@ -47,7 +47,7 @@ void setup() {
   pinMode(led2,OUTPUT);
 
   Serial.begin(115200);
-  WiFi.softAP(ssidi, passwordi);
+  WiFi.softAP(APssid, APpassword);
 
   Serial.println(WiFi.softAPIP());
 

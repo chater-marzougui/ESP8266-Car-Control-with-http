@@ -22,13 +22,21 @@ This repository contains the Arduino code for the ESP8266 microcontroller instal
   ### [Flutter-Car-Control_Http](https://github.com/chater-marzougui/Flutter-Car-Control_Http)
 
 ## Usage:
-- Make the Car, refer to the end of the readme for the composents needed for the car.
-- Power on the RC car and wait for the ESP8266 to establish a Wi-Fi connection.
-- Connect to the same Wi-Fi network as the ESP8266.
-- Launch the Flutter RC Car Controller App on your device.
-- Fill in the IP address sent by the microcontroller
-- Select the desired control mode (button or gyroscope) in the app.
-- Begin controlling the RC car using the app's interface.
+1. Make the Car, refer to the end of the readme for the composents needed for the car.
+2. **if you use the direct way:**
+    - Power on the RC car and wait for the ESP8266 to establish a Wi-Fi connection.
+
+   **if you use the ESP with AP mode:** 
+    - Power on the RC car and wait for the ESP8266 to open the HotSpot.
+    - Connect to the Hotspot using the password in the file.
+    - Open the phone app, choose : change wifi password.
+    - Fill in the credentials of your new wifi (home or phone HotSpot).
+    - Click connect and move to step 3.
+3. Connect to the same Wi-Fi network as the ESP8266.
+4. Launch the Flutter RC Car Controller App on your device.
+5. Fill in the IP address sent by the microcontroller
+6. Select the desired control mode (button or gyroscope) in the app.
+7. Begin controlling the RC car using the app's interface.
 
 ## Email Notification Setup:
 
