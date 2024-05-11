@@ -5,10 +5,9 @@
 
 ///////////////Variables to Modify
 ///you have to modify these :
-#define AUTHOR_EMAIL "chater.forarduinouse@gmail.com"
-#define AUTHOR_PASSWORD "fwuf xxvz bykx jpmp"
-
-#define RECIPIENT_EMAIL "chater.mrezgui2002@gmail.com"
+#define AUTHOR_EMAIL "PUT_THE_EMAIL_YOU_MADE_FOR_THE_ESP_HERE"
+#define AUTHOR_PASSWORD "PUT_THE_PASSWORD_HERE" // App Password in Gmail
+#define RECIPIENT_EMAIL "PUT_YOUR_EMAIL_HERE"
 
 const char* APssid = "ESP8266-Access-Point";
 const char* APpassword = "12345678";
@@ -87,7 +86,7 @@ void setup() {
 
   message.subject = "My IP Address";
 
-  message.addRecipient(F("Chater"), RECIPIENT_EMAIL);
+  message.addRecipient(F("User"), RECIPIENT_EMAIL);
   //////////////////////////////////////
   String textMsg = WiFi.localIP().toString();
   //////////////////////////////////////
@@ -276,6 +275,5 @@ void submit() {
     password = server.arg("password");
     Serial.println("Data 1: " + ssid);
     Serial.println("Data 2: " + password);
-    //server.send(200, "text/plain", "Received: " + ssid + " and " + password);
   }
 

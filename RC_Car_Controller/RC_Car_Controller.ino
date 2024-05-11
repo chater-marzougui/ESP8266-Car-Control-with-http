@@ -4,10 +4,9 @@
 
 ///////////////Variables to Modify
 ///you have to modify these :
-#define AUTHOR_EMAIL "chater.forarduinouse@gmail.com"
-#define AUTHOR_PASSWORD "fwuf xxvz bykx jpmp"
-
-#define RECIPIENT_EMAIL "chater.mrezgui2002@gmail.com"
+#define AUTHOR_EMAIL "PUT_THE_EMAIL_YOU_MADE_FOR_THE_ESP_HERE"
+#define AUTHOR_PASSWORD "PUT_THE_PASSWORD_HERE" // App Password in Gmail
+#define RECIPIENT_EMAIL "PUT_YOUR_EMAIL_HERE"
 const char* ssid = "infinix7";
 const char* password = "12345678";
 ///// the rest is optional
