@@ -37,9 +37,12 @@
   <summary>Table of Contents</summary>
   <ol>
     <li><a href="#about-the-project">About The Project</a></li>
+    <li><a href="#features">Features</a></li>
     <li><a href="#installation">Installation</a></li>
-    <li><a href="#arduino-code-repo">Arduino Code Repo</a></li>
+    <li><a href="#flutter-code-repo">Flutter Code Repo</a></li>
     <li><a href="#usage">Usage</a></li>
+    <li><a href="#email-notification-setup">Email Setup</a></li>
+    <li><a href="#needed-materials-for-the-setup">Needed Materials</a></li>
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
